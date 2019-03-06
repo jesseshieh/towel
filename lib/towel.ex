@@ -3,6 +3,7 @@ defmodule Towel do
     quote do
       import Monad
       import Functor
+      import Otherwise
       import Result, except: [wrap: 1, unwrap: 1]
       import Maybe, except: [wrap: 1, unwrap: 1]
     end
